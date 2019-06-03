@@ -196,6 +196,7 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
             JOptionPane.showMessageDialog(null, "数据表创建成功", "", JOptionPane.INFORMATION_MESSAGE);
             System.out.println("数据表创建成功");
             product.textArea.setText("");
+            product.textField.setText("");
 
         }
         catch (Exception e){
@@ -214,8 +215,11 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
             while (res.next())
             {
 
-                for(int i=0;i<str.length;i+=2)
-                    System.out.println(str[i+1]+"  "+res.getString(str[i]));
+                for(int i=0;i<str.length;i+=2) {
+                    System.out.println(str[i + 1] + "  " + res.getString(str[i]));
+//                    JOptionPane.showMessageDialog(null, "你所查询的数据："+str[i+1]
+//                            +":"+res.getString(str[i]), "", JOptionPane.ERROR_MESSAGE);
+                }
                 System.out.print("查询完成");
                 product.textArea.setText("");
 
@@ -249,6 +253,7 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
             JOptionPane.showMessageDialog(null, "数据表插入成功", "", JOptionPane.INFORMATION_MESSAGE);
             System.out.println("已经插入数据");
             product.textArea.setText("");
+            product.textField.setText("");
 
         }
         catch (Exception e){

@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ed1774a5-5f4d-4034-ad22-66ebc88ef32d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder$bu_lis_five.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder$bu_lis_five.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder$bu_lis_four.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder$bu_lis_four.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder$bu_lis_one.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder$bu_lis_one.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder$bu_lis_six.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder$bu_lis_six.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder$bu_lis_three.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder$bu_lis_three.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder$bu_lis_two.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder$bu_lis_two.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/text1/Generator_mode/SQL_ConcreteBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Generator_mode/SQL_ConcreteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Generator_mode/SQL_ConcreteBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/text1/sql_conn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/text1/sql_conn.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Generator_mode/SQL_ConcreteBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="225" column="51" lean-forward="true" selection-start-line="225" selection-start-column="51" selection-end-line="225" selection-end-column="51" />
+            <state relative-caret-position="4473">
+              <caret line="219" column="59" selection-start-line="219" selection-start-column="59" selection-end-line="219" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/text1/sql_conn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="56" column="35" lean-forward="true" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+            <state relative-caret-position="1134">
+              <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/src/Generator_mode/SQL_Director.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
-              <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
               <folding>
                 <element signature="e#149#150#0" expanded="true" />
                 <element signature="e#185#186#0" expanded="true" />
@@ -81,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Generator_mode/SQL_Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+            <state relative-caret-position="189">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -145,6 +151,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,8 +191,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,18 +311,20 @@
       <workItem from="1559520328789" duration="625000" />
       <workItem from="1559533617125" duration="6648000" />
       <workItem from="1559556389782" duration="3894000" />
-      <workItem from="1559576818453" duration="6542000" />
+      <workItem from="1559576818453" duration="6730000" />
+      <workItem from="1559583735713" duration="828000" />
+      <workItem from="1559584977205" duration="239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44669000" />
+    <option name="totallyTimeSpent" value="45924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="693" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49910554" visible="true" weight="0.2265861" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49910554" visible="true" weight="0.2326284" />
       <window_info id="Structure" order="1" sideWeight="0.5008944" side_tool="true" weight="0.21752267" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -397,23 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Generator_mode/SQL_Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Generator_mode/SQL_Bulider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/text2/main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -428,10 +419,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generator_mode/SQL_Bulider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generator_mode/SQL_ConcreteBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4473">
+          <caret line="219" column="59" selection-start-line="219" selection-start-column="59" selection-end-line="219" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/text1/sql_conn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Generator_mode/SQL_Director.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
           <folding>
             <element signature="e#149#150#0" expanded="true" />
             <element signature="e#185#186#0" expanded="true" />
@@ -439,20 +457,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/text1/sql_conn.java">
+    <entry file="file://$PROJECT_DIR$/src/Generator_mode/SQL_Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="56" column="35" lean-forward="true" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Generator_mode/SQL_ConcreteBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="225" column="51" lean-forward="true" selection-start-line="225" selection-start-column="51" selection-end-line="225" selection-end-column="51" />
+        <state relative-caret-position="147">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -461,8 +469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Generator_mode/SQL_Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        <state relative-caret-position="189">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
         </state>
       </provider>
     </entry>
