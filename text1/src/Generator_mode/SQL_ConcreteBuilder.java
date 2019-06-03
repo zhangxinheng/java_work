@@ -5,7 +5,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
-
 public class SQL_ConcreteBuilder implements SQL_Bulider {
     private SQL_Product product;
     static  String JDBC_URL="jdbc:mysql://localhost:3306";
@@ -22,7 +21,7 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
         listenerFIVE li_five=new listenerFIVE();
         product=new SQL_Product();
         product.bar=new JMenuBar();
-        product.button1=new JButton();
+        product.button1=new JButton("确定");
         product.textField= new JTextField(30);
         product.menu=new JMenu("菜单");
         product.item_con=new JMenuItem("链接数据库");
@@ -50,32 +49,32 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
 //    }
     @Override
     public void connect_sql() {//链接数据库
-        bu_lis Bu_lis=new bu_lis();
-        product.button1.addActionListener(Bu_lis);
+        bu_lis_three Bu_lis_three=new bu_lis_three();
+        product.button1.addActionListener(Bu_lis_three);
     }
 
     @Override
     public void create_sql() {//创建数据库
-        bu_lis Bu_lis=new bu_lis();
-        product.button1.addActionListener(Bu_lis);
+        bu_lis_four Bu_lis_four=new bu_lis_four();
+        product.button1.addActionListener(Bu_lis_four);
     }
 
     @Override
     public void create_form() {//创建数据表
-        bu_lis Bu_lis=new bu_lis();
-        product.button1.addActionListener(Bu_lis);
+        bu_lis_two Bu_lis_two=new bu_lis_two();
+            product.button1.addActionListener(Bu_lis_two);
     }
 
     @Override
     public void search_form() {//查询数据表
-        bu_lis Bu_lis=new bu_lis();
-        product.button1.addActionListener(Bu_lis);
+        bu_lis_one Bu_lis_one=new bu_lis_one();
+            product.button1.addActionListener(Bu_lis_one);
     }
 
     @Override
     public void delete_form() {//删除数据表
-        bu_lis Bu_lis=new bu_lis();
-        product.button1.addActionListener(Bu_lis);
+        bu_lis_five Bu_lis_five=new bu_lis_five();
+            product.button1.addActionListener(Bu_lis_five);
     }
 
     @Override
@@ -92,45 +91,54 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
         product.add(product.button1);
         return product;
     }
-
-
     class listenerOne implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            JButton b=new JButton("创建数据库");
-            product.button1=b;
+//            JButton b=new JButton("创建数据库");
+//            product.button1=b;
+//            product.remove(product.button1);
+//            product.add(product.button1);
+            product.menu=new JMenu("创建数据库");
         }
     }
     class listenerTWO implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            JButton b=new JButton("链接数据库");
-            product.button1=b;
-
+//            JButton b=new JButton("链接数据库");
+//            product.button1=b;
+//            product.remove(product.button1);
+//            product.add(product.button1);
+            product.menu=new JMenu("链接数据库");
         }
     }
     class listenerTHREE implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            JButton b=new JButton("创建数据表");
-            product.button1=b;
-
+//            JButton b=new JButton("创建数据表");
+//            product.button1=b;
+//            product.remove(product.button1);
+//            product.add(product.button1);
+            product.menu=new JMenu("创建数据表");
         }
     }
     class listenerFOUR implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            JButton b=new JButton("查询数据表");
-            product.button1=b;
-
+//            JButton b=new JButton("查询数据表");
+//            product.button1=b;
+//            product.remove(product.button1);
+//            product.add(product.button1);
+            product.menu=new JMenu("查询数据表");
         }
     }
     class listenerFIVE implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            JButton b=new JButton("删除数据表");
-            product.button1=b;
-
+//            JButton b=new JButton("删除数据表");
+//            product.button1=b;
+//            product.remove(product.button1);
+//            product.add(product.button1);
+            product.menu=new JMenu("删除数据表");
         }
     }
     public void con_sql(String text){
@@ -187,32 +195,59 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
             System.out.println("数据表删除失败");
         }
     }
-    class bu_lis implements ActionListener{
+    class bu_lis_one implements ActionListener{
 
         @Override
         public void actionPerformed(ActionEvent e) {
             JTextField te=product.textField;
-            if(product.button1.getText()=="查询数据表"){
+            if(product.menu.getText()=="查询数据表"){
                 String text=te.getText();
                 sea_sql(text);
             }
-            if(product.button1.getText()=="创建数据表"){
+        }
+    }
+    class bu_lis_two implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            JTextField te=product.textField;
+            if(product.menu.getText()=="创建数据表"){
                 String text=te.getText();
                 cre_form_sql(text);
             }
-            if(product.button1.getText()=="链接数据库"){
+        }
+    }
+    class bu_lis_three implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            JTextField te=product.textField;
+            if(product.menu.getText()=="链接数据库"){
                 String text=te.getText();
                 con_sql(text);
             }
-            if(product.button1.getText()=="创建数据库"){
+        }
+    }
+    class bu_lis_four implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            JTextField te=product.textField;
+            if(product.menu.getText()=="创建数据库"){
                 String text=te.getText();
                 cre_sql(text);
             }
-            if(product.button1.getText()=="删除数据表"){
+        }
+    }
+    class bu_lis_five implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            JTextField te=product.textField;
+            if(product.menu.getText()=="删除数据表"){
                 String text=te.getText();
                 del_sql(text);
             }
-
         }
     }
 }

@@ -14,6 +14,5 @@ public class SQL_Director {
         bulider.connect_sql();
         JPanel product=bulider.getPanel();
         return  product;
-
     }
 }
