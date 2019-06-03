@@ -12,6 +12,7 @@ public class SQL_Director {
         bulider.create_sql();
         bulider.create_form();
         bulider.connect_sql();
+        bulider.ins_sql_form();
         JPanel product=bulider.getPanel();
         return  product;
     }

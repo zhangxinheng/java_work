@@ -8,5 +8,6 @@ public interface SQL_Bulider {
     public abstract void create_form();
     public abstract void search_form();
     public abstract void delete_form();
+    public abstract  void  ins_sql_form();
     public abstract JPanel getPanel();//JButton button
 }

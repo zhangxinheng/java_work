@@ -62,7 +62,6 @@ public class sql_conn {
             {
                 System.out.println(res.getInt("id") + " " + res.getString("name"));
             }
-
         }
         catch (Exception e){
             System.out.println("查询失败");
