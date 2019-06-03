@@ -60,6 +60,7 @@ public class sql_conn {
             res=stat.executeQuery("select * from text");
             while (res.next())
             {
+
                 System.out.println(res.getInt("id") + " " + res.getString("name"));
             }
         }

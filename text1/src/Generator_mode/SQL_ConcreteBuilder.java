@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 public class SQL_ConcreteBuilder implements SQL_Bulider {
+    private String [] str;
     private SQL_Product product;
     static  String JDBC_URL="jdbc:mysql://localhost:3306";
     static String USER="root";
@@ -164,7 +165,7 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
         try{
             conn= DriverManager.getConnection(JDBC_URL+"/"+text,USER,PASSWORD);
             JOptionPane.showMessageDialog(null, "链接成功", "", JOptionPane.INFORMATION_MESSAGE);
-
+            product.textArea.setText("");
             System.out.println("链接成功");
         }
         catch(Exception e){
@@ -179,6 +180,7 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
             stat.executeUpdate("create database "+text);
             JOptionPane.showMessageDialog(null, "数据库创建成功", "", JOptionPane.INFORMATION_MESSAGE);
             System.out.println("数据库创建成功");
+            product.textArea.setText("");
             stat.close();
         }
         catch (Exception e){
@@ -186,12 +188,15 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
             System.out.println("数据库创建失败");
         }
     }
-    public void cre_form_sql(String text){
+    public void cre_form_sql(String text1,String text2){
         try{
             Statement stat=conn.createStatement();
-            stat.executeUpdate("create table "+text);
+            str=text1.split("\\s+");
+            stat.executeUpdate("create table "+text2+"("+text1+")");
             JOptionPane.showMessageDialog(null, "数据表创建成功", "", JOptionPane.INFORMATION_MESSAGE);
             System.out.println("数据表创建成功");
+            product.textArea.setText("");
+
         }
         catch (Exception e){
             JOptionPane.showMessageDialog(null, "数据表创建失败", "", JOptionPane.ERROR_MESSAGE);
@@ -201,23 +206,35 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
     public void sea_sql(String text){
         try{
             Statement stat=conn.createStatement();
-            res=stat.executeQuery("select * from "+text);
+            res=stat.executeQuery("select * from  "+text);
+//                for(int i=0;i<str.length;i+=2) {
+//                    System.out.println(res.getString(str[i]) + "  " + res.getString(str[i+2]));
+
+//                }
             while (res.next())
             {
-                System.out.println(res);
+
+                for(int i=0;i<str.length;i+=2)
+                    System.out.println(str[i+1]+"  "+res.getString(str[i]));
+                System.out.print("查询完成");
+                product.textArea.setText("");
+
             }
+
         }
         catch (Exception e){
-            System.out.println("查询失败");
+            System.out.println("error");
         }
     }
     public void del_sql(String text){
         try{
             Statement stat=conn.createStatement();
-            stat.executeUpdate("delete table "+text);
+            stat.executeUpdate("DROP table "+text);
             JOptionPane.showMessageDialog(null, "数据表删除成功", "", JOptionPane.INFORMATION_MESSAGE);
 
             System.out.println("数据表删除成功");
+            product.textArea.setText("");
+
         }
         catch (Exception e){
             JOptionPane.showMessageDialog(null, "数据表删除失败", "", JOptionPane.ERROR_MESSAGE);
@@ -231,6 +248,8 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
 
             JOptionPane.showMessageDialog(null, "数据表插入成功", "", JOptionPane.INFORMATION_MESSAGE);
             System.out.println("已经插入数据");
+            product.textArea.setText("");
+
         }
         catch (Exception e){
             JOptionPane.showMessageDialog(null, "数据表插入失败", "", JOptionPane.ERROR_MESSAGE);
@@ -254,9 +273,11 @@ public class SQL_ConcreteBuilder implements SQL_Bulider {
         @Override
         public void actionPerformed(ActionEvent e) {
             JTextArea te=product.textArea;
+            JTextField tf=product.textField;
             if(product.menu.getText()=="创建数据表"){
-                String text=te.getText();
-                cre_form_sql(text);
+                String text1=te.getText();
+                String text2=tf.getText();
+                cre_form_sql(text1,text2);
             }
         }
     }
